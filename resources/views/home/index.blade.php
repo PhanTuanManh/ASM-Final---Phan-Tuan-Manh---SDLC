@@ -249,7 +249,7 @@
 
         <div class="spotify-playlists">
             <div class="description">
-                <h2>Focus</h2>
+                <h2>Pop</h2>
                 <p>Show all</p>
             </div>
             <div class="list">
@@ -269,6 +269,27 @@
             </div>
         </div>
 
+        <div class="spotify-playlists">
+            <div class="description">
+                <h2>Rap</h2>
+                <p>Show all</p>
+            </div>
+            <div class="list">
+                @foreach ($products->slice(6, 6) as $product)
+                    <div class="item">
+                        <img src="{{ asset('image/product/' . $product->product_image) }}" />
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>{{ $product->product_name }}</h4>
+                        <p>{{ $product->product_description }}</p>
+                        <audio controls controlsList="nodownload" ontimeupdate="myAudio(this)">
+                            <source src="{{ asset('audio/product/' . $product->audio) }}" type="audio/mpeg">
+                        </audio>
+                    </div>
+                @endforeach
+            </div>
+        </div>
 
         <div class="spotify-playlists">
             <div class="description">

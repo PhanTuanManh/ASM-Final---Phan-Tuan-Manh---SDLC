@@ -50,18 +50,7 @@
                     </select>
                 </div>
             </div>
-            {{-- <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <div class="form-group">
-                            <strong>Image:</strong>
-                            <img src="{{ asset('image/product/' . $product->product_image) }}" alt="" border=3
-                                height=150 width=200>
-                        </div>
-                    </div>
-                    <input type="file" class="form-control" placeholder="Image" value="{{ $product->product_image }}" name="product_image" />
-                </div>
-            </div> --}}
+
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
